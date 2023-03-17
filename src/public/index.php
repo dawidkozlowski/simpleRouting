@@ -11,6 +11,7 @@ try {
     $router
         ->get('/', [App\Controllers\HomeController::class, 'index'])
         ->post('/upload', [App\Controllers\HomeController::class, 'upload'])
+        ->get('/download', [App\Controllers\HomeController::class, 'download'])
         ->get('/invoices', [App\Controllers\InvoiceController::class, 'index'])
         ->get('/invoices/create', [App\Controllers\InvoiceController::class, 'create'])
         ->post('/invoices/create', [App\Controllers\InvoiceController::class, 'store']);
