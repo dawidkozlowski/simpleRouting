@@ -2,11 +2,13 @@
 
 namespace App\Controllers;
 
+use App\View;
+
 class HomeController
 {
-    public function index(): string
+    public function index(): View
     {
-        return 'home';
+        return View::make('index');
     }
 
 }

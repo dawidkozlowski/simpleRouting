@@ -2,6 +2,8 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+define('VIEW_PATH', __DIR__ . '/../views');
+
 $router = new App\Router();
 
 $router
