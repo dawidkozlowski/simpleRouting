@@ -66,6 +66,7 @@ class HomeController
 
         readfile(STORAGE_PATH . '/receipt.pdf');
     }
+
     public function upload()
     {
         $filePath = STORAGE_PATH . '/' . $_FILES['receipt']['name'];
